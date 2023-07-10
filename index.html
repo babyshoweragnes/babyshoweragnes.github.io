@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Baby Shower - Agnes Olivia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-image"></div>
+    <header>
+        <nav>
+            <a class="home" href="babyshower.github.io">Inicio</a>
+            <ul>
+                <a href="#">Menú</a>
+                <a href="#">Invitación</a>
+                <a href="#">Ubicación</a>
+                <a href="#">Contacto</a>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="presentation" data-aos="fade-up" data-aos-duration="800">
+        <h2>Baby <br> shower</h2>
+
+        <p>Celebremos la vida de:</p>
+
+        <span id="name">Agnes Olivia</span>
+
+        <img src="/assets/img/dinosaur.png" alt="">
+    </section>
+
+    <section id="welcome" data-aos="fade-up" data-aos-duration="800">
+        <div id="text">
+            <p>Acompañanos a celebrar la llegada de Agnes Olivia, <br> agradeciendo a Dios porque su gran amor <br> se
+                nos revela
+                cada día con esta <br> nueva bendición.</p> <br>
+            <p>Será una bella sorpresa para nuestra amada Daniela.</p>
+        </div>
+        <img src="/assets/img/baby-dinosaur.jpeg" alt="">
+    </section>
+
+    <section id="schedule" data-aos="fade-up" data-aos-duration="800">
+
+        <div id="counter" data-aos="fade-up" data-aos-duration="800">
+            <div class="block-ct">
+                <span id="dias" class="data-sch"></span>
+                <span class="sch-mt">Días</span>
+            </div>
+            <div class="block-ct">
+                <span id="horas" class="data-sch"></span>
+                <span class="sch-mt">Horas</span>
+            </div>
+            <div class="block-ct">
+                <span id="minutos" class="data-sch"></span>
+                <span class="sch-mt">Minutos</span>
+            </div>
+            <div class="block-ct">
+                <span id="segundos" class="data-sch"></span>
+                <span class="sch-mt">Segundos</span>
+            </div>
+        </div>
+
+        <div id="details" data-aos="fade-up" data-aos-duration="800">
+            <span id="date">SÁBADO <br> <b>19</b> <br> Agosto</span>
+            <span id="location">Recepción <br> Sala de eventos El Sitio, <br> Cartago <br> 3:30 P.M.</span>
+            <img src="/assets/img/dinosaur3.png" alt="">
+        </div>
+
+        <p class="ivn" data-aos="fade-up" data-aos-duration="800">Invitación para (2) personas.</p>
+
+    </section>
+
+    <section id="invitation">
+        <h2>Confirmar asistencia</h2>
+        <p class="please">Confirma tu asistencia antes del 1 de Agosto</p>
+      
+        <form action="procesar_formulario.php" method="POST">
+            <div class="form-group fg1">
+                <input type="text" id="nombre" class="in1"  name="nombre"  required placeholder="Nombre">
+                <input type="text" id="apellidos" class="in1"  name="apellidos"  required placeholder="Apellidos">
+            </div>
+            <div class="form-group fg1 mup">
+                <label class="fg1 confirm">
+                    <input type="radio" name="asistencia" value="Si"> Sí, estaré allí
+                </label>
+                <label class="fg1 confirm">
+                    <input type="radio" name="asistencia" value="No"> Lo siento, no podré ir
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="contador confirm">Número de personas:</label>
+                <input type="number" id="contador" name="contador" min="1" max="2" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje adicional:</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section id="pene">
+        <h1>jifoejwiohgioewhgiogeho</h1>
+    </section>
+    <script src="/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            disable: 'mobile'
+        });
+    </script>
+</body>
+
+</html>
