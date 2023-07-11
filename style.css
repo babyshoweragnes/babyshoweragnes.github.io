@@ -149,7 +149,8 @@ header {
     height: 75px;
     padding: 20px 40px;
     font-size: 20px;
-    background-color: rgba(255, 255, 255, 0.491);
+    background-image: url(/assets/img/basic.png);
+    background-size: cover;
     z-index: 100000;
     padding-bottom: 0;
 }
