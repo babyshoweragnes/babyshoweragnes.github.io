@@ -311,7 +311,44 @@ ul a {
     font-family: 'kiddy', sans-serif;
     color: #f08644;
     font-size: 38px;
+}
 
+#howtogo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.img-pr{
+    display: flex;
+    width: 100%;
+    max-width: 300px;
+}
+
+.dr-img img{
+    width: 145px !important;
+    position: relative;
+    bottom: 197px;
+    left: 326px;
+}
+
+#howtogo h2{
+    font-family: 'kiddos';
+    font-size: 50px;
+    color: #a0a65a;
+    font-weight: 100;
+}
+
+.dr-text{
+    text-align: center;
+    font-size: 20px;
+    color: #8e6640;
+    font-family: 'kiddy';
+    line-height: 2;
 }
 
 #details {
