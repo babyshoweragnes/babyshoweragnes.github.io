@@ -1,32 +1,30 @@
-document.querySelector("#submit").addEventListener("click", e => {
+document.getElementById("submit").addEventListener("click", e => {
     e.preventDefault();
 
     //INGRESE UN NUMERO DE WHATSAPP VALIDO AQUI:
-    const telefono = "50664649512";
+    const telefono = "50688997787";
 
     const nombre = document.getElementById("nombre").value;
     const apellidos = document.getElementById("apellidos").value;
-    const voy = document.getElementById("voy").value;
-    const novoy = document.getElementById("novoy").value;
+    const voy = document.getElementById("voy");
 
     let resultvoy;
-    if (voy) {
-        resultvoy = "Voy a participar del evento";
-    } else if (novoy) {
-        resultvoy = "No voy a participar del evento";
+    if (voy.checked) {
+        resultvoy = "Sí, asistiré.";
+    } else {
+        resultvoy = "No, no asistiré.";
     }
 
+    const mensaje = document.getElementById("mensaje").value;
+
+
     const url = `https://api.whatsapp.com/send?phone=${telefono}&text=
-          *_BABY SHOWER AGNES_*%0A
-          *Reserva*%0A%0A
-          *Nombre*%0A
-          ${nombre}%0A
-          *Apellidos*%0A
-          ${apellidos}%0A
-          *Participara del evento?*%0A
-          ${resultvoy}%0A
-          *Mensaje Adicional*%0A
-          ${mensaje}%0A`;
+    Evento: Baby Shower Agnes Olivia.%0A
+    Asunto: Confirmacion de asistencia.%0A
+    Nombre: ${nombre}.%0A
+    Apellidos: ${apellidos}.%0A
+    Voy a asistir: ${resultvoy}%0A
+    Mensaje adicional: ${mensaje}.`;
 
     window.open(url);
 });

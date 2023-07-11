@@ -4,7 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Baby Shower - Agnes Olivia</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -83,17 +83,17 @@
             </div>
             <div class="form-group fg1 mup">
                 <label class="fg1 confirm">
-                    <input type="radio" id="voy" name="asistencia" value="Si"> Si, estare alli
+                    <input type="radio" id="voy" name="asistencia" value="Si" checked> Si, estare alli
                 </label>
                 <label class="fg1 confirm">
                     <input type="radio" id="novoy" name="asistencia" value="No"> Lo siento, no podre ir
                 </label>
             </div>
             <div class="form-group">
-                <label class="ms-lb" for="mensaje">Mensaje adicional:</label>
-                <textarea id="mensaje" name="mensaje"></textarea>
+                <label class="ms-lb" for="mensaje" >Mensaje adicional:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
             </div>
-            <button type="submit"><img src="/assets/img/hueso.png" alt="" style="
+            <button type="submit" id="submit"><img src="/assets/img/hueso.png" alt="" style="
                 width: 180px;
             "></button>
         </form>
@@ -122,8 +122,9 @@
     <section id="foot">
         <h1>a</h1>
     </section>
+    <script src="/form.js"></script>
     <script src="/app.js"></script>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
             disable: 'mobile'
