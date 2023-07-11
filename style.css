@@ -155,7 +155,7 @@ header {
 nav {
     display: flex;
     flex-direction: row;
-    width: 95%;
+    width: 100%;
     padding: 5px 50px;
     justify-content: flex-start;
     align-items: center;
@@ -313,7 +313,7 @@ ul a {
 #howtogo {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 96%;
     gap: 30px;
     justify-content: center;
     align-items: center;
