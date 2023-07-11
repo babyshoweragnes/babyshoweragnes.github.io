@@ -5,6 +5,16 @@
     src: url('assets/fonts/MinionPro-Regular.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'kiddy';
+    src: url('assets/fonts/kiddy.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'kiddos';
+    src: url('/assets/fonts/Kiddos-Demo.ttf') format('truetype');
+}
+
 /*//////////////////////////////////////////////////////////////////
 [ REBOOT ]*/
 *,
@@ -139,7 +149,6 @@ header {
     height: 75px;
     padding: 20px 40px;
     font-size: 20px;
-    font-style: italic;
     background-color: rgba(255, 255, 255, 0.491);
     z-index: 100000;
     padding-bottom: 0;
@@ -152,15 +161,14 @@ nav {
     padding: 5px 50px;
     justify-content: flex-start;
     align-items: center;
-    font-family: Times;
     font-weight: 200;
-    border-bottom: 2px #949478 solid;
+    border-bottom: 2px #8e6640 solid;
 }
 
 .home {
-    font-size: 25px;
-    color: #949478 !important;
-    font-weight: 700;
+    font-size: 30px;
+    color: #8e6640 !important;
+    font-family: 'kiddos';
 
 }
 
@@ -173,7 +181,9 @@ ul {
 }
 
 ul a {
-    color: #949478 !important;
+    font-size: 30px;
+    color: #8e6640 !important;
+    font-family: 'kiddos';
 }
 
 
@@ -200,19 +210,20 @@ ul a {
 }
 
 #presentation p {
-    font-size: 15px;
+    font-size: 10px;
     margin-top: 18px;
     color: #743308;
     font-family: italic;
     text-transform: uppercase;
+    font-family: 'kiddy';
 }
 
 #presentation span {
-    font-family: 'Fredoka', sans-serif;
-    color: #6b8f45;
-    font-size: 112px;
+    font-family: 'kiddos', sans-serif;
+    color: #a0a65a;
+    font-size: 120px;
     bottom: 17px;
-    font-weight: 600;
+
 }
 
 #welcome {
@@ -226,13 +237,13 @@ ul a {
     align-self: center;
     margin: 0 auto;
     margin-top: 125px;
-    gap: 40px;
+    gap: 00px;
 }
 
 #text {
-    color: #949478 !important;
-    font-family: times;
-    font-size: 21px;
+    color: #8e6640 !important;
+    font-family: 'kiddy';
+    font-size: 22px;
     width: 60%;
     text-align: center;
     line-height: 1.5;
@@ -241,6 +252,8 @@ ul a {
 #welcome img {
     width: 100%;
     max-width: 200px;
+    position: relative;
+    left: -50px;
 }
 
 #schedule {
@@ -268,9 +281,9 @@ ul a {
 .block-ct {
     display: flex;
     flex-direction: column;
-    width: 200px;
-    height: 200px;
-    background-color: #bac270;
+    width: 150px;
+    height: 150px;
+    background-color: #bac270e8;
     justify-content: center;
     box-shadow: 3px -2px 14px 2px rgba(0, 0, 0, 0.7);
     -webkit-box-shadow: 3px -2px 14px 2px rgba(0, 0, 0, 0.7);
@@ -280,19 +293,24 @@ ul a {
 
 .sch-mt {
     position: relative;
-    top: 0px;
-    font-family: 'Fredoka', sans-serif;
-    left: 40px;
+    top: 25px;
+    font-family: 'kiddos', sans-serif;
+    left: 25px;
     font-weight: 400 !important;
     text-align: justify;
     color: #855e3c;
-    font-size: 20px;
+    font-size: 22px;
+}
+
+#fecha{
+    width: 35% !important;
 }
 
 .data-sch {
-    font-family: 'minion', sans-serif;
-    color: #d46637;
-    font-size: 92px;
+    font-family: 'kiddy', sans-serif;
+    color: #f08644;
+    font-size: 38px;
+
 }
 
 #details {
@@ -305,13 +323,13 @@ ul a {
     gap: 30px;
     flex-wrap: wrap;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 70px;
 }
 
 #details #date {
-    font-family: times;
-    font-size: 40px;
-    color: #70abba;
+    font-family: 'kiddos';
+    font-size: 60px;
+    color: #458dcb;
     border-right: 3px solid #743308;
     padding-right: 40px;
     border-radius: 1px;
@@ -321,11 +339,16 @@ ul a {
 }
 
 #details #location {
-    font-family: times;
+    font-family: 'kiddos';
     font-size: 40px;
     color: #d46f37;
     padding-right: 40px;
     border-radius: 1px;
+}
+
+.nm-day {
+    font-family: 'kiddy';
+    font-weight: 100;
 }
 
 #details img {
@@ -335,13 +358,13 @@ ul a {
 .ivn {
     text-align: center;
     display: inline;
-    font-family: times;
-    color: #6b8f45;
+    font-family: 'kiddy';
+    color: #a0a65a;
     font-size: 18px;
     margin: 30px 0;
 }
 
-#invitation{
+#invitation {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -349,16 +372,16 @@ ul a {
     margin-top: 175px;
 }
 
-#invitation h2{
-    color: #6b8f45;
-    font-size: 36px;
-    font-family: 'Fredoka';
-    font-weight: 600;
+#invitation h2 {
+    color: #a0a65a;
+    font-size: 50px;
+    font-family: 'kiddos';
+    font-weight: 100;
 }
 
-#invitation .please{
-    font-family: times;
-    font-size: 16px;
+#invitation .please {
+    font-family: 'kiddy';
+    font-size: 11px;
     margin-bottom: 40px;
     color: #743308;
 }
@@ -376,85 +399,160 @@ form {
     width: 95%;
     margin: 0 auto;
     padding: 20px;
+    padding-top: 0px;
     border-radius: 5px;
-  }
+}
 
-  .fg1{
+.fg1 {
     display: flex;
-    gap: 50px; 
+    gap: 50px;
     justify-content: center;
-  }
+}
 
-  .in1{
+.in1 {
     display: flex;
     width: 35% !important;
-  }
+}
 
-  .form-group {
+.form-group {
     margin-bottom: 20px;
-  }
+}
 
-  label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
+label {
+    color: #6b8f45;
+    font-family: 'kiddy';
+    font-size: 16px;
+    font-weight: 100;
+    text-align: initial;
+}
 
-  .confirm{
+.fg2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 32%;
+    margin-top: 50px;
+}
+
+.ms-lb{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 700px;
+    margin-top: 50px;
+}
+
+.ft{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    gap: 100px;
+}
+
+input[type="radio"]{
+    width: 30px;
+}
+
+#mensaje {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #743308;
+    border-radius: 0px;
+    color: #6b8f45;
+    font-family: 'kiddy';
+    font-size: 16px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 700px;
+    min-height: 20px;
+}
+
+.fg3 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 500px;
+}
+
+.confirm {
     justify-content: center;
     gap: 0;
     color: #6b8f45;
-    font-family: times;
-    font-size: 25px;
-    font-style: italic;
+    font-family: 'kiddy';
+    font-size: 16px;
     font-weight: 100;
-  }
+}
+
+#contador {
+    width: 95%;
+    max-width: 700px;
+    background-color: none;
+    margin: 0 auto;
+    font-family: 'kiddos';
+    font-size: 14px;
+    color: #6b8f45;
+}
 
 
 
-  .mup{
+.mup {
     margin-top: 60px;
-    
-  }
+}
 
-  input[type="text"],
-  input[type="number"],
-  textarea {
+input[type="text"],
+input[type="number"],
+textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-  }
+    font-family: times !important;
+    font-size: 24px !important;
+}
 
-  input[type="text"]{
+input[type="text"] {
     background-color: transparent;
     outline: none;
     border: none;
-    border-bottom: 2px solid #743308;
+    border-bottom: 1px solid #743308;
     border-radius: 0px;
-  }
+    padding-bottom: 20px;
+}
 
-  input[type="text"]::placeholder, input[type="text"]{
+input[type="text"]::placeholder,
+input[type="text"] {
     color: #6b8f45;
-    font-family: times;
-    font-size: 25px;
-    font-style: italic;
-  }
+    font-family: 'kiddy';
+    font-size: 16px;
+}
 
-  input[type="radio"] {
+input[type="radio"] {
     margin-right: 5px;
-  }
+}
 
-  button[type="submit"] {
-    background-color: #4caf50;
+button[type="submit"] {
     color: #fff;
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
-  }
+    transition: 0.5s all ease;
+}
 
-  button[type="submit"]:hover {
-    background-color: #45a049;
-  }
+button[type="submit"]:hover {
+    background-color: none !important; 
+    transition: 0.5s all ease;
+    transform: scale(1.2);
+}
+
+button[type="submit"] {
+    color: #fff;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    left: 30%;
+    top: 10px;
+}
