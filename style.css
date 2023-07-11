@@ -149,8 +149,6 @@ header {
     height: 75px;
     padding: 20px 40px;
     font-size: 20px;
-    background-image: url(/assets/img/basic.png);
-    background-size: cover;
     z-index: 100000;
     padding-bottom: 0;
 }
@@ -425,10 +423,11 @@ ul a {
     color: #743308;
 }
 
-#pene {
+#foot {
     margin-top: 200px;
     height: fit-content;
     width: 100%;
+    visibility: hidden;
 }
 
 /* Estilos del formulario */
