@@ -4,7 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Baby Shower - Agnes Olivia</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,7 +14,8 @@
     <header>
         <nav>
             <a class="home" href="babyshower.github.io">Inicio</a>
-            <ul>
+            <span id="show-nav"><img src="/assets/icons/menu-2.svg"></span>
+            <ul style="display: none;">
                 <a href="#">Menu</a>
                 <a href="#">Invitacion</a>
                 <a href="#">Ubicacion</a>
@@ -30,10 +31,10 @@
 
         <span id="name">Agnes Olivia</span>
 
-        <img src="/assets/img/dinosaur.png" alt="">
+        <img src="/assets/img/dinosaur.png" class="ds1">
     </section>
 
-    <section id="welcome" data-aos="fade-up" data-aos-duration="800">
+    <section id="welcome" class="sc-np" data-aos="fade-up" data-aos-duration="800">
         <div id="text">
             <p>Acompañanos a celebrar la <br> llegada de Agnes Olivia,<br> agradeciendo a Dios porque su <br> gran amor
                 se nos revela <br>
@@ -43,7 +44,7 @@
         <img src="/assets/img/baby-dinosaur.jpeg" alt="">
     </section>
 
-    <section id="schedule" data-aos="fade-up" data-aos-duration="800">
+    <section id="schedule" class="sc-np" data-aos="fade-up" data-aos-duration="800">
 
         <div id="counter" data-aos="fade-up" data-aos-duration="800">
             <div class="block-ct">
@@ -71,7 +72,7 @@
 
     </section>
 
-    <section id="invitation" data-aos="fade-up" data-aos-duration="800">
+    <section id="invitation" class="sc-np" data-aos="fade-up" data-aos-duration="800">
         <h2>Confirmar asistencia</h2>
         <p class="please">Confirma tu asistencia antes del 1 de Agosto</p>
 
@@ -98,7 +99,7 @@
         </form>
     </section>
 
-    <section id="howtogo" data-aos="fade-up" data-aos-duration="800">
+    <section id="howtogo" class="sc-np" data-aos="fade-up" data-aos-duration="800">
         <img class="img-pr" src="/assets/img/dino-howto.png" data-aos="fade-up" data-aos-duration="800">
         <h2 data-aos="fade-up" data-aos-duration="800">Como llegar</h2>
         <a class="dr-text"
@@ -110,19 +111,19 @@
                 src="/assets/img/huella.png" alt="Mostrar ruta en Waze"></a>
     </section>
 
-    <scrtion id="final" data-aos="fade-up" data-aos-duration="800">
+    <section id="final" class="sc-np" data-aos="fade-up" data-aos-duration="800">
         <img src="/assets/img/final.png" style="
         width: 100%;
         max-width: 790px;
         margin: 0 auto;
     ">
-    </scrtion>
+    </section>
 
     <section id="foot">
         <h1>a</h1>
     </section>
     <script src="/app.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <script>
         AOS.init({
             disable: 'mobile'

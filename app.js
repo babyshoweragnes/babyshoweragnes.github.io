@@ -33,6 +33,9 @@ function updateCounter() {
 updateCounter();
 
 
+const shownv = document.getElementById();
+
+
 
 
 
