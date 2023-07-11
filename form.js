@@ -26,5 +26,11 @@ document.getElementById("submit").addEventListener("click", e => {
     Voy a asistir: ${resultvoy}%0A
     Mensaje adicional: ${mensaje}.`;
 
-    window.open(url);
+    if (nombre !== "" && apellidos !== "") {
+        window.open(url);
+    }
+    else{
+        alert("Faltan campos por rellenar en el formulario!");
+    }
+
 });
