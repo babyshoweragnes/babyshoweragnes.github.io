@@ -40,6 +40,7 @@ const bgimage = document.getElementById('bg-mn');
 const dt = document.getElementById('dt');
 const rs = document.getElementById('rs');
 const lg = document.getElementById('lg');
+const icon = document.getElementById('nav-icon');
 
 let swonoff = false;
 
@@ -48,6 +49,7 @@ const turnoffnav = () =>{
     navigation.style.visibility = 'hidden';
     bgimage.style.opacity = '1';
     swonoff = false;
+    icon.src = '/assets/icons/menu-2.svg';
 }
 
 switchnav.addEventListener('click', function () {
@@ -56,6 +58,7 @@ switchnav.addEventListener('click', function () {
         navigation.style.visibility = 'visible';
         bgimage.style.opacity = '0.6';
         swonoff = true;
+        icon.src = '/assets/icons/menu-close.svg';
     } else {
         turnoffnav();
     }
