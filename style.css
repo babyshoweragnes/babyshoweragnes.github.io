@@ -27,6 +27,11 @@
     box-sizing: border-box;
 }
 
+input[type='radio'],
+.confirm{
+    cursor: pointer;
+}
+
 .background-image {
     position: fixed;
     top: 0;
