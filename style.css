@@ -32,7 +32,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     background-image: url(/assets/img/bg-main.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -150,6 +150,9 @@ header {
     font-size: 20px;
     z-index: 100000;
     padding-bottom: 0;
+    background-image: url(/assets/img/bg-main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 nav {
@@ -605,6 +608,14 @@ button[type="submit"] {
     position: relative;
 }
 
+@media screen and (max-width: 1333px) {
+    header {
+        background-image: url(/assets/img/top-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
 @media screen and (max-width: 1020px) {
     ul {
         display: flex;
@@ -628,6 +639,7 @@ button[type="submit"] {
 
     header {
         background-color: white;
+        background-image: none !important;
     }
 
     nav {
@@ -839,7 +851,7 @@ button[type="submit"] {
         font-weight: 100;
     }
 
-    .sc-np{
+    .sc-np {
         margin-top: 200px !important;
     }
 
