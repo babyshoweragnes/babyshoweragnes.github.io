@@ -20,7 +20,7 @@ document.getElementById("submit").addEventListener("click", e => {
 
     const url = `https://api.whatsapp.com/send?phone=${telefono}&text=
     Evento: Baby Shower Agnes Olivia.%0A
-    Asunto: Confirmacion de asistencia.%0A
+    Asunto: Asistencia.%0A
     Nombre: ${nombre}.%0A
     Apellidos: ${apellidos}.%0A
     Voy a asistir: ${resultvoy}%0A
