@@ -646,7 +646,7 @@ button[type="submit"] {
         top: 150px;
         left: -30px;
         background-image: url(/assets/img/wood.jpg);
-        color: white;
+        color: rgb(227, 253, 255);
         background-size: cover;
         padding: 20px 0;
     }
