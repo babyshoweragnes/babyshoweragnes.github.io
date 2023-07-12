@@ -705,8 +705,10 @@ button[type="submit"] {
         justify-content: center;
         flex-wrap: wrap;
         margin-top: 40px;
-        width: 100%;
-        gap: 13%;
+        width: 58%;
+        gap: 12%;
+        margin: 0 auto;
+        margin-top: 50px;
     }
 
     .block-ct {
@@ -881,4 +883,18 @@ button[type="submit"] {
         margin-top: 200px !important;
     }
 
+}
+
+@media screen and (max-width: 410px) {
+    #counter {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        width: 85%;
+        gap: 12%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
 }
