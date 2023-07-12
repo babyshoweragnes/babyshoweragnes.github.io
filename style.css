@@ -745,9 +745,11 @@ button[type="submit"] {
         font-family: 'kiddy';
         font-size: 16px;
         width: 90%;
+        max-width: 500px;
         margin: 0 auto;
         max-width: 660px;
-        max-height: 43px;
+        min-height: 60px;
+        max-height: 70px;
         position: static;
     }
 
