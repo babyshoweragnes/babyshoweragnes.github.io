@@ -32,41 +32,42 @@ function updateCounter() {
 // Iniciar el contador
 updateCounter();
 
-
-const switchnav = document.getElementById('show-nav');
-const mainm = document.getElementById('main');
 const navigation = document.getElementById('navigation');
-const bgimage = document.getElementById('bg-mn');
-const dt = document.getElementById('dt');
-const rs = document.getElementById('rs');
-const lg = document.getElementById('lg');
-const icon = document.getElementById('nav-icon');
 
-let swonoff = false;
+if (window.innerWidth < 1021) {
+    const switchnav = document.getElementById('show-nav');
+    const mainm = document.getElementById('main');
+    const bgimage = document.getElementById('bg-mn');
+    const dt = document.getElementById('dt');
+    const rs = document.getElementById('rs');
+    const lg = document.getElementById('lg');
+    const icon = document.getElementById('nav-icon');
+    let swonoff = false;
 
-const turnoffnav = () =>{
-    mainm.style.visibility = 'visible';
-    navigation.style.visibility = 'hidden';
-    bgimage.style.opacity = '1';
-    swonoff = false;
-    icon.src = '/assets/icons/menu-2.svg';
-}
-
-switchnav.addEventListener('click', function () {
-    if (swonoff === false) {
-        mainm.style.visibility = 'hidden';
-        navigation.style.visibility = 'visible';
-        bgimage.style.opacity = '0.6';
-        swonoff = true;
-        icon.src = '/assets/icons/menu-close.svg';
-    } else {
-        turnoffnav();
+    const turnoffnav = () => {
+        mainm.style.visibility = 'visible';
+        navigation.style.visibility = 'hidden';
+        bgimage.style.opacity = '1';
+        swonoff = false;
+        icon.src = '/assets/icons/menu-2.svg';
     }
-});
 
-dt.addEventListener('click', turnoffnav);
-rs.addEventListener('click', turnoffnav);
-lg.addEventListener('click', turnoffnav);
+    switchnav.addEventListener('click', function () {
+        if (swonoff === false) {
+            mainm.style.visibility = 'hidden';
+            navigation.style.visibility = 'visible';
+            bgimage.style.opacity = '0.6';
+            swonoff = true;
+            icon.src = '/assets/icons/menu-close.svg';
+        } else {
+            turnoffnav();
+        }
+    });
+
+    dt.addEventListener('click', turnoffnav);
+    rs.addEventListener('click', turnoffnav);
+    lg.addEventListener('click', turnoffnav);
+}
 
 
 

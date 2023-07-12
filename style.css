@@ -91,6 +91,10 @@ label {
     border: none;
 }
 
+.sc-np {
+    margin-top: 200px !important;
+}
+
 /* Estilos para la barra de desplazamiento */
 ::-webkit-scrollbar {
     width: 7px;
@@ -917,10 +921,6 @@ button[type="submit"] {
         font-size: 31px;
         color: #a0a65a;
         font-weight: 100;
-    }
-
-    .sc-np {
-        margin-top: 250px !important;
     }
 
     #counter {
