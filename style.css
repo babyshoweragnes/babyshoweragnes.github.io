@@ -234,28 +234,28 @@ ul a {
     display: flex;
     flex-direction: row;
     width: 90%;
-    padding: 100px 17%;
+    padding: 99px 6%;
     height: fit-content;
     justify-content: center;
     align-items: center;
     align-self: center;
     margin: 0 auto;
     margin-top: 125px;
-    gap: 00px;
+    gap: 0px;
 }
 
 #text {
     color: #8e6640 !important;
     font-family: 'kiddy';
     font-size: 19px;
-    width: 60%;
+    width: 75%;
     text-align: center;
     line-height: 1.5;
 }
 
 #welcome img {
     width: 100%;
-    max-width: 200px;
+    max-width: none;
     position: relative;
 }
 
@@ -842,8 +842,9 @@ button[type="submit"] {
 
     #welcome img {
         width: 100%;
-        max-width: 133px;
+        max-width: none;
         position: relative;
+        max-width: 600px;
     }
 
     .block-ct {
@@ -871,7 +872,7 @@ button[type="submit"] {
     }
 
     .dr-text {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     #howtogo h2 {
