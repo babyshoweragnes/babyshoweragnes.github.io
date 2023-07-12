@@ -851,8 +851,8 @@ button[type="submit"] {
     }
 
     .block-ct {
-        width: 125px;
-        height: 125px;
+        width: 37%;
+        height: 127px;
     }
 
     .sch-mt {
@@ -921,6 +921,18 @@ button[type="submit"] {
 
     .sc-np {
         margin-top: 250px !important;
+    }
+
+    #counter {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        width: 85%;
+        gap: 12%;
+        margin: 0 auto;
+        margin-top: 50px;
     }
 
 }
