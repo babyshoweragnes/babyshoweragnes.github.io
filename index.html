@@ -14,8 +14,8 @@
     <header>
         <nav>
             <a class="home" href="https://babyshoweragnes.github.io/">Inicio</a>
-            <span  id="show-nav"><img src="/assets/icons/menu-2.svg"></span>
-            <ul style="display: none;">
+            <span id="show-nav"><img src="/assets/icons/menu-2.svg"></span>
+            <ul id="navigation">
                 <a href="#schedule">Detalles</a>
                 <a href="#invitation">Reserva</a>
                 <a href="#howtogo">Lugar</a>
@@ -23,100 +23,105 @@
         </nav>
     </header>
 
-    <section id="presentation" data-aos="fade-up" data-aos-duration="800">
-        <h2>Baby <br> shower</h2>
+    <main id="main" style="display: none;">
+        <section id="presentation" data-aos="fade-up" data-aos-duration="800">
+            <h2>Baby <br> shower</h2>
 
-        <p>Celebremos la vida de:</p>
+            <p>Celebremos la vida de:</p>
 
-        <span id="name">Agnes Olivia</span>
+            <span id="name">Agnes Olivia</span>
 
-        <img src="/assets/img/dinosaur.png" class="ds1">
-    </section>
+            <img src="/assets/img/dinosaur.png" class="ds1">
+        </section>
 
-    <section id="welcome" class="sc-np" data-aos="fade-up" data-aos-duration="800">
-        <div id="text">
-            <p>Acompañanos a celebrar la <br> llegada de Agnes Olivia,<br> agradeciendo a Dios porque su <br> gran amor
-                se nos revela <br>
-                cada día con esta <br> nueva bendición.</p> <br>
-            <p>Sera una bella sorpresa para nuestra amada Daniela.</p>
-        </div>
-        <img src="/assets/img/baby-dinosaur.jpeg" alt="">
-    </section>
-
-    <section id="schedule" class="sc-np" data-aos="fade-up" data-aos-duration="800">
-
-        <div id="counter" data-aos="fade-up" data-aos-duration="800">
-            <div class="block-ct">
-                <span id="dias" class="data-sch"></span>
-                <span class="sch-mt">Días</span>
+        <section id="welcome" class="sc-np" data-aos="fade-up" data-aos-duration="800">
+            <div id="text">
+                <p>Acompañanos a celebrar la <br> llegada de Agnes Olivia,<br> agradeciendo a Dios porque su <br> gran
+                    amor
+                    se nos revela <br>
+                    cada día con esta <br> nueva bendición.</p> <br>
+                <p>Sera una bella sorpresa para nuestra amada Daniela.</p>
             </div>
-            <div class="block-ct">
-                <span id="horas" class="data-sch"></span>
-                <span class="sch-mt">Horas</span>
-            </div>
-            <div class="block-ct">
-                <span id="minutos" class="data-sch"></span>
-                <span class="sch-mt">Minutos</span>
-            </div>
-            <div class="block-ct">
-                <span id="segundos" class="data-sch"></span>
-                <span class="sch-mt">Segundos</span>
-            </div>
-        </div>
+            <img src="/assets/img/baby-dinosaur.jpeg" alt="">
+        </section>
 
-        <div id="details" data-aos="fade-up" data-aos-duration="800">
-            <img id="fecha" src="/assets/img/fecha.png" alt="">
-            <img src="/assets/img/dinosaur3.png">
-        </div>
+        <section id="schedule" class="sc-np" data-aos="fade-up" data-aos-duration="800">
 
-    </section>
-
-    <section id="invitation" class="sc-np" data-aos="fade-up" data-aos-duration="800">
-        <h2>Confirmar asistencia</h2>
-        <p class="please">Confirma tu asistencia antes del 1 de Agosto</p>
-
-        <form action="procesar_formulario.php" method="POST" data-aos="fade-up" data-aos-duration="800">
-            <div class="form-group fg1 ft">
-                <input type="text" id="nombre" class="in1" name="nombre" required placeholder="Nombre">
-                <input type="text" id="apellidos" class="in1" name="apellidos" required placeholder="Apellidos">
+            <div id="counter" data-aos="fade-up" data-aos-duration="800">
+                <div class="block-ct">
+                    <span id="dias" class="data-sch"></span>
+                    <span class="sch-mt">Días</span>
+                </div>
+                <div class="block-ct">
+                    <span id="horas" class="data-sch"></span>
+                    <span class="sch-mt">Horas</span>
+                </div>
+                <div class="block-ct">
+                    <span id="minutos" class="data-sch"></span>
+                    <span class="sch-mt">Minutos</span>
+                </div>
+                <div class="block-ct">
+                    <span id="segundos" class="data-sch"></span>
+                    <span class="sch-mt">Segundos</span>
+                </div>
             </div>
-            <div class="form-group fg1 mup">
-                <label class="fg1 confirm">
-                    <input type="radio" id="voy" name="asistencia" value="Si" checked> Si, estare alli
-                </label>
-                <label class="fg1 confirm">
-                    <input type="radio" id="novoy" name="asistencia" value="No"> Lo siento, no podre ir
-                </label>
-            </div>
-            <div class="form-group">
-                <label class="ms-lb" for="mensaje" >Mensaje adicional:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-            </div>
-            <button type="submit" id="submit"><img src="/assets/img/hueso.png" alt="" style="
-                width: 180px;
-            "></button>
-        </form>
-    </section>
 
-    <section id="howtogo" class="sc-np" data-aos="fade-up" data-aos-duration="800">
-        <img class="img-pr" src="/assets/img/dino-howto.png" data-aos="fade-up" data-aos-duration="800">
-        <h2 data-aos="fade-up" data-aos-duration="800">Como llegar</h2>
-        <a class="dr-text"
-            href="https://www.waze.com/en/live-map/directions/bar-and-grill-el-sitio-el-carmen,-cartago?place=w.180944995.1809384412.456436"
-            data-aos="fade-up" data-aos-duration="800">1km Este del Puente Bailey, <br> carretera Volcan Irazu 30101,
-            <br> Provicia de Cartago, <br> Costa Rica <br></a>
-        <a class="dr-img"
-            href="https://www.waze.com/en/live-map/directions/bar-and-grill-el-sitio-el-carmen,-cartago?place=w.180944995.1809384412.456436"><img
-                src="/assets/img/huella.png" alt="Mostrar ruta en Waze"></a>
-    </section>
+            <div id="details" data-aos="fade-up" data-aos-duration="800">
+                <img id="fecha" src="/assets/img/fecha.png" alt="">
+                <img src="/assets/img/dinosaur3.png">
+            </div>
 
-    <section id="final" class="sc-np" data-aos="fade-up" data-aos-duration="800">
-        <img src="/assets/img/final.png" style="
-        width: 100%;
-        max-width: 790px;
-        margin: 0 auto;
-    ">
-    </section>
+        </section>
+
+        <section id="invitation" class="sc-np" data-aos="fade-up" data-aos-duration="800">
+            <h2>Confirmar asistencia</h2>
+            <p class="please">Confirma tu asistencia antes del 1 de Agosto</p>
+
+            <form action="procesar_formulario.php" method="POST" data-aos="fade-up" data-aos-duration="800">
+                <div class="form-group fg1 ft">
+                    <input type="text" id="nombre" class="in1" name="nombre" required placeholder="Nombre">
+                    <input type="text" id="apellidos" class="in1" name="apellidos" required placeholder="Apellidos">
+                </div>
+                <div class="form-group fg1 mup">
+                    <label class="fg1 confirm">
+                        <input type="radio" id="voy" name="asistencia" value="Si" checked> Si, estare alli
+                    </label>
+                    <label class="fg1 confirm">
+                        <input type="radio" id="novoy" name="asistencia" value="No"> Lo siento, no podre ir
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label class="ms-lb" for="mensaje">Mensaje adicional:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                </div>
+                <button type="submit" id="submit"><img src="/assets/img/hueso.png" alt="" style="
+                    width: 180px;
+                "></button>
+            </form>
+        </section>
+
+        <section id="howtogo" class="sc-np" data-aos="fade-up" data-aos-duration="800">
+            <img class="img-pr" src="/assets/img/dino-howto.png" data-aos="fade-up" data-aos-duration="800">
+            <h2 data-aos="fade-up" data-aos-duration="800">Como llegar</h2>
+            <a class="dr-text"
+                href="https://www.waze.com/en/live-map/directions/bar-and-grill-el-sitio-el-carmen,-cartago?place=w.180944995.1809384412.456436"
+                data-aos="fade-up" data-aos-duration="800">1km Este del Puente Bailey, <br> carretera Volcan Irazu
+                30101,
+                <br> Provicia de Cartago, <br> Costa Rica <br></a>
+            <a class="dr-img"
+                href="https://www.waze.com/en/live-map/directions/bar-and-grill-el-sitio-el-carmen,-cartago?place=w.180944995.1809384412.456436"><img
+                    src="/assets/img/huella.png" alt="Mostrar ruta en Waze"></a>
+        </section>
+
+        <section id="final" class="sc-np" data-aos="fade-up" data-aos-duration="800">
+            <img src="/assets/img/final.png" style="
+            width: 100%;
+            max-width: 790px;
+            margin: 0 auto;
+        ">
+        </section>
+    </main>
+
 
     <section id="foot">
         <h1>a</h1>
