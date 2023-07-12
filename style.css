@@ -851,7 +851,7 @@ button[type="submit"] {
     }
 
     .block-ct {
-        width: 37%;
+        width: 37% !important;
         height: 127px;
     }
 
