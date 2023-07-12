@@ -714,7 +714,7 @@ button[type="submit"] {
     }
 
     .ft {
-        gap: 50px;
+        gap: 20px;
         flex-direction: column;
     }
 
@@ -739,8 +739,8 @@ button[type="submit"] {
         font-size: 16px;
         width: 90%;
         margin: 0 auto;
-        max-width: 661px;
-        min-height: 20px;
+        max-width: 660px;
+        max-height: 43px;
         position: static;
     }
 
