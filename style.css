@@ -510,7 +510,9 @@ input[type="radio"] {
     max-width: 661px;
     min-height: 20px;
     position: relative;
-    left: -88px;
+    left: -111px;
+    margin-top: 74px;
+    padding-bottom: 20px;
 }
 
 .fg3 {
@@ -721,8 +723,21 @@ button[type="submit"] {
     }
 
     .ft {
-        gap: 20px;
+        gap: 7px !important;
         flex-direction: column;
+    }
+
+    #invitation .please {
+        font-family: 'kiddy';
+        font-size: 11px;
+        margin-bottom: 17px;
+        color: #743308;
+    }
+
+    .fg1 {
+        display: flex;
+        gap: 25px;
+        justify-content: center;
     }
 
     .mup {
@@ -744,7 +759,7 @@ button[type="submit"] {
         color: #6b8f45;
         font-family: 'kiddy';
         font-size: 16px;
-        width: 90%;
+        width: 80% !important;
         max-width: 500px;
         margin: 0 auto;
         max-width: 660px;
