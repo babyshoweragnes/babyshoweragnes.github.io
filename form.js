@@ -19,11 +19,11 @@ document.getElementById("submit").addEventListener("click", e => {
 
 
     const url = `https://api.whatsapp.com/send?phone=${telefono}&text=
-    Evento: Baby Shower Agnes Olivia.%0A
-    Asunto: Asistencia.%0A
-    Nombre: ${nombre}.%0A
-    Apellidos: ${apellidos}.%0A
-    Voy a asistir: ${resultvoy}%0A
+    Evento: Baby Shower Agnes Olivia.%0A%0A
+    Asunto: Asistencia.%0A%0A
+    Nombre: ${nombre}.%0A%0A
+    Apellidos: ${apellidos}.%0A%0A
+    Voy a asistir: ${resultvoy}%0A%0A
     Mensaje adicional: ${mensaje}.`;
 
     if (nombre !== "" && apellidos !== "") {
