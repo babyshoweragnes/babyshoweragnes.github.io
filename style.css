@@ -97,7 +97,7 @@ label {
 }
 
 .sc-np {
-    margin-top: 200px !important;
+    margin-top: 250px !important;
 }
 
 /* Estilos para la barra de desplazamiento */
@@ -714,7 +714,7 @@ button[type="submit"] {
     }
 
     .sc-np {
-        margin-top: 100px !important;
+        margin-top: 200px !important;
     }
 
     #welcome {
